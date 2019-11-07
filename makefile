@@ -1,13 +1,13 @@
-final: card_demo.o Player.o Deck.o Card.o
-	g++ -o gofish card_demo.o Player.o Deck.o Card.o
-driver: card_demo.cpp Player.h Deck.h
+final: card_demo.o player.o deck.o card.o
+	g++ -o gofish card_demo.o player.o deck.o card.o
+driver: card_demo.cpp player.h deck.h
 	g++ -c card_demo.cpp 
-Player.o: Player.cpp Player.h Deck.h
-	g++ -c Player.cpp
-Deck.o: Deck.cpp Deck.h Card.h
-	g++ -c Deck.cpp
-Card.o: Card.cpp Card.h
-	g++ -c Card.cpp
+player.o: player.cpp player.h deck.h
+	g++ -c player.cpp
+deck.o: deck.cpp deck.h card.h
+	g++ -c deck.cpp
+card.o: card.cpp card.h
+	g++ -c card.cpp
 
 # final: UtPodDriver.o UtPod.o Song.o
 # 	g++ -o utpod UtPodDriver.o UtPod.o Song.o
