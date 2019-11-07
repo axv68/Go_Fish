@@ -18,8 +18,6 @@
 #include "card.h"
 #include "deck.h"
 
-#include "card.cpp"
-
 using namespace std;
 
 // int main(){ 
@@ -70,12 +68,11 @@ void Deck::shuffle(){
 
 Card Deck::dealCard(){
     //Check if there are cards in the deck
-    if (myIndex != 52){ 
+    // if (myIndex != 52){ 
         myIndex++; 
         return (myCards[myIndex-1]); 
         
-    }
-
+    //}
 }
 
 int Deck::size() const{ 
