@@ -34,6 +34,7 @@ Card Player::removeCardFromHand(Card c){
         if (myHand[j].getRank() == c.getRank()){ 
             Card temp = myHand[j]; 
             myHand.erase(myHand.begin()+j); 
+            return temp; 
         }
     } 
 }
@@ -49,3 +50,42 @@ Card Player::chooseCardFromHand() const {
     return (myHand[randomCardNum]); 
 
 }
+
+int Player::getHandSize() const{ 
+    return (myHand.size()); 
+}
+
+// bool Player::checkHandForPair(Card &c1, Card &c2){ 
+//     if (c1.getRank() == c2.getRank()){ 
+//         bookCards(c1, c2); 
+//         return true; 
+//     }
+//     else { 
+//         return false; 
+//     }
+// }
+
+bool Player::cardInHand(Card c) const{ 
+    for (int j = 0; j < myHand.size(); j++){ 
+        if (myHand[j].getRank() == c.getRank()){ 
+            return true;
+        }
+    }
+    return false; 
+}
+
+void Player::checkHandForPair(){
+    for (int i = 0; i < myHand.size(); i++){ 
+        for (int j = 0; j < myHand.size(); j++){ 
+            if (i != j){
+                if (myHand[i].getRank() == myHand[j].getRank()){
+                    bookCards(myHand[i],myHand[j]); 
+                    removeCardFromHand(myHand[i]); 
+                    removeCardFromHand(myHand[j]); 
+                }
+            }
+        }
+    }
+}
+
+
