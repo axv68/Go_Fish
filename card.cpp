@@ -25,18 +25,8 @@
 #include "card.h"
 using namespace std;
 
-// int main(){ 
-//     Card s; 
-//     cout << s << endl; 
-//     Card h(5, h.clubs); 
-//     cout << h << endl; 
-//     Card j(12, j.hearts); 
-//     cout << j << endl; 
-
-// }
-
 Card::Card(){ 
-    myRank = 1; 
+    myRank = 0;
     mySuit = spades; 
 }
 
@@ -95,20 +85,29 @@ int Card::getRank() const{
 }
 
 string Card::rankString(int r) const{
-    string result; 
+    string result;
+    bool faceCard = false;
     if (myRank == 1){
-        result = "A"; 
+        result = "A";
+        faceCard = true;
     }
     if (myRank == 11){
-        result = "J"; 
+        result = "J";
+        faceCard = true;
     }
     if (myRank == 12){
-        result = "Q"; 
+        result = "Q";
+        faceCard = true;
     }
     if (myRank == 13){
-        result = "K"; 
+        result = "K";
+        faceCard = true;
     }
-    else { 
+    if (myRank == 10){
+        result = "10";
+        faceCard = true;
+    }
+    if (!faceCard) {
         result = myRank + 0x30; 
     }
     return result; 

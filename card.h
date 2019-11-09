@@ -33,7 +33,7 @@ class Card
 
     enum Suit {spades, hearts, diamonds, clubs};
     
-    Card();          // default, ace of spades
+    Card();          // default, ZERO of spades
 
     Card(int rank, Suit s);
 

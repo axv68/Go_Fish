@@ -37,7 +37,7 @@ class Player
     //this function will check a players hand for a pair. 
     //If a pair is found, it returns true and populates the two variables with the cards tha make the pair.
 
-    bool checkHandForBook(Card &c1, Card &c2);
+    //    bool checkHandForBook(Card &c1, Card &c2);
 
     //OPTIONAL
     // comment out if you decide to not use it    
@@ -49,7 +49,7 @@ class Player
     Card chooseCardFromHand() const; 
     
     //Does the player have the card c in her hand?
-    bool cardInHand(Card c) const; 
+    Card cardInHand(Card c) const;
     
     //Remove the card c from the hand and return it to the caller
     Card removeCardFromHand(Card c); 

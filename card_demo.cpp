@@ -14,11 +14,21 @@ void dealHand(Deck &d, Player &p, int numCards);
 
 int main()
 {
-    int numCards = 5;
+    int numCards = 7;
+    int matchCounter = 0;
     
-    Player p1("Joe");
-    Player p2("Jane");
-    
+    Player p1("Chris");
+    Player p2("Amit");
+    bool win = false;
+    bool switchPlayer = false;
+    Card dummyCard;
+    Card cardToAdd;
+
+    Player* askingPlayer = &p1;
+    Player* stillPlayer = &p2;
+    Player* temp = &p2;
+    string winner;
+
     Deck d;  //create a deck of cards
     d.shuffle();
     
@@ -27,81 +37,54 @@ int main()
        
     cout << p1.getName() <<" has : " << p1.showHand() << endl;
     cout << p2.getName() <<" has : " << p2.showHand() << endl;
+    cout << endl;
     
-    // Card c(4, c.clubs); 
-    // p1.addCard(c); 
-
-    // cout << p1.getName() <<" has : " << p1.showHand() << endl;
-    // cout << "Joe Cards: "<< p1.getHandSize() << endl ;
-    // Card q = p1.chooseCardFromHand(); 
-    // cout << q << endl; 
-
-    string winner; 
-    
-    while (d.size() != 0){ 
-
-        if (p1.getHandSize() == 0){ 
-            winner = p1.getName(); 
-            break; 
-        }
-        if (p2.getHandSize() == 0){ 
-            winner = p2.getName(); 
-            break; 
-        }
-
-        cout << "       It is " << p1.getName() << " 's turn" << endl; 
-        p1.checkHandForPair();
-        if (p1.getHandSize() == 0){ 
-                winner = p1.getName(); 
-                break; 
-        }
-        Card p = p1.chooseCardFromHand(); 
-        cout << endl << p1.getName() << " asks if " << p2.getName() << " has " << p << endl; 
-
-        if (p2.cardInHand(p)){ 
-            cout << p1.getName() << " has a match " << endl;     
-            p1.removeCardFromHand(p); 
-            p1.bookCards(p, p2.removeCardFromHand(p)); 
-            if (p1.getHandSize() == 0){ 
-                winner = p1.getName(); 
-            break; 
-        }
-        }
-        else{ 
-            cout << endl << p2.getName() << " doesn't have a card with rank " << p.getRank() << endl; 
-            cout << endl << p1.getName() << " now needs to add card to his/her hand " << endl; 
-            p1.addCard(d.dealCard()); 
-            cout << p1.getName() <<" NOW has : " << p1.showHand() << endl;
-            if (d.size() == 0){ 
-                break; 
+    while (!win) {
+        askingPlayer->checkHandForPair();
+        if (askingPlayer->getHandSize() == 0) {
+            if(d.size() != 0) {
+                cardToAdd = d.dealCard();
+                askingPlayer->addCard(cardToAdd);
+                cout << askingPlayer->getName() << " is out of cards and draws a " << cardToAdd << endl;
+                temp = askingPlayer;
+                askingPlayer = stillPlayer;
+                stillPlayer = temp;
             }
         }
+        cout << "It is " << askingPlayer->getName() << " 's turn" << endl;
+        Card p = askingPlayer->chooseCardFromHand();
+        cout << endl << askingPlayer->getName() << " asks if " << stillPlayer->getName() << " has a " << p.rankString(p.getRank()) << endl;
 
-        cout << "       It is " << p2.getName() << " 's turn" << endl;
-        p2.checkHandForPair();
-        if (p2.getHandSize() == 0){ 
-                winner = p2.getName(); 
-                break; 
+        if (stillPlayer->sameRankInHand(p)) {
+            matchCounter = 0;
+            while (stillPlayer->cardInHand(p) != dummyCard) {
+                askingPlayer->addCard(stillPlayer->cardInHand(p));
+                stillPlayer->removeCardFromHand(stillPlayer->cardInHand(p));
+                matchCounter++;
+            }
+            cout << stillPlayer->getName() << " has " << matchCounter << " " << p.rankString(p.getRank()) << "'s" << endl;
+        }else {
+            cout << endl << stillPlayer->getName() << " says 'Go Fish' " << endl;
+            if(d.size() != 0) {
+                cardToAdd = d.dealCard();
+                askingPlayer->addCard(cardToAdd);
+                cout << endl << askingPlayer->getName() << " draws a " << cardToAdd.rankString(cardToAdd.getRank()) << endl << endl;
+                temp = askingPlayer;
+                askingPlayer = stillPlayer;
+                stillPlayer = temp;
+            }
         }
-        Card t = p2.chooseCardFromHand(); 
-        cout << endl << p2.getName() << " asks if " << p1.getName() << " has " << t << endl; 
-
-        if (p1.cardInHand(t)){ 
-            cout << p2.getName() << " has a match " << endl;         
-            p2.removeCardFromHand(t); 
-            p2.bookCards(t, p1.removeCardFromHand(t)); 
-            if (p2.getHandSize() == 0){ 
-                winner = p2.getName(); 
-            break; 
+        cout << askingPlayer->getName() << " NOW has : " << askingPlayer->showHand() << endl;
+        cout << stillPlayer->getName() << " NOW has : " << stillPlayer->showHand() << endl << endl;
+        if(d.size() == 0){
+            cout << "Deck is empty" << endl << endl;
+            win = true;
         }
-        }
-        else{ 
-            cout << endl << p1.getName() << " doesn't have a card with rank " << p.getRank() << endl; 
-            cout << endl << p2.getName() << " now needs to add card to his/her hand " << endl; 
-            p2.addCard(d.dealCard()); 
-            cout << p2.getName() <<" NOW has : " << p1.showHand() << endl;
-        }
-
+    }
+    if(p1.getBookSize() > p2.getBookSize()){
+        winner = p1.getName();
+    }else{
+        winner = p2.getName();
     }
 
     cout << "The Winner is " << winner << "!" <<endl; 
