@@ -47,7 +47,7 @@ Card Player::removeCardFromHand(Card c){            // bad function, needs to re
 void Player::bookCards(Card c1, Card c2){ 
     myBook.push_back(c1);                       // puts c1 at the end of the vector
     myBook.push_back(c2);
-    cout << this->getName() << " booked " << c1 << " and " << c2 << endl << endl;
+    cout <<"    "<< this->getName() << " booked " << c1 << " and " << c2 << endl << endl;
 }
 
 Card Player::chooseCardFromHand() const { 

@@ -36,6 +36,7 @@ int main()
     dealHand(d, p2, numCards);
        
     cout << p1.getName() <<" has : " << p1.showHand() << endl;
+    cout << endl; 
     cout << p2.getName() <<" has : " << p2.showHand() << endl;
     cout << endl;
     
@@ -45,15 +46,18 @@ int main()
             if(d.size() != 0) {
                 cardToAdd = d.dealCard();
                 askingPlayer->addCard(cardToAdd);
-                cout << askingPlayer->getName() << " is out of cards and draws a " << cardToAdd << endl;
+                cout << "    "<< askingPlayer->getName() << " is out of cards and draws a " << cardToAdd << endl;
                 temp = askingPlayer;
-                askingPlayer = stillPlayer;
+                askingPlayer = stillPlayer; 
                 stillPlayer = temp;
             }
+            else{
+                break; // if the players hand is 0 AND the deck is 0, you should break
+            }
         }
-        cout << "It is " << askingPlayer->getName() << " 's turn" << endl;
+        cout << endl << "It is " << askingPlayer->getName() << " 's turn" << endl;
         Card p = askingPlayer->chooseCardFromHand();
-        cout << endl << askingPlayer->getName() << " asks if " << stillPlayer->getName() << " has a " << p.rankString(p.getRank()) << endl;
+        cout << endl << "   " << askingPlayer->getName() << " asks if " << stillPlayer->getName() << " has a " << p.rankString(p.getRank()) << endl;
 
         if (stillPlayer->sameRankInHand(p)) {
             matchCounter = 0;
@@ -62,32 +66,48 @@ int main()
                 stillPlayer->removeCardFromHand(stillPlayer->cardInHand(p));
                 matchCounter++;
             }
-            cout << stillPlayer->getName() << " has " << matchCounter << " " << p.rankString(p.getRank()) << "'s" << endl;
+            cout << "   "<<stillPlayer->getName() << " has " << matchCounter << " " << p.rankString(p.getRank()) << "'s" << endl;
         }else {
-            cout << endl << stillPlayer->getName() << " says 'Go Fish' " << endl;
+            cout << endl << "   " << stillPlayer->getName() << " says 'Go Fish' " <<  endl;
             if(d.size() != 0) {
                 cardToAdd = d.dealCard();
                 askingPlayer->addCard(cardToAdd);
-                cout << endl << askingPlayer->getName() << " draws a " << cardToAdd.rankString(cardToAdd.getRank()) << endl << endl;
+                cout << endl << "   "<< askingPlayer->getName() << " draws a " << cardToAdd.rankString(cardToAdd.getRank()) << endl << endl;
                 temp = askingPlayer;
                 askingPlayer = stillPlayer;
                 stillPlayer = temp;
             }
         }
         cout << askingPlayer->getName() << " NOW has : " << askingPlayer->showHand() << endl;
+        cout << endl; 
         cout << stillPlayer->getName() << " NOW has : " << stillPlayer->showHand() << endl << endl;
         if(d.size() == 0){
-            cout << "Deck is empty" << endl << endl;
+            cout << "The deck is empty! Time to tally up results ...." << endl << endl;
             win = true;
         }
     }
-    if(p1.getBookSize() > p2.getBookSize()){
+
+    cout << "________________________________" << endl << endl; 
+    
+    cout << p1.getName() << " has " << (p1.getBookSize())/2 << " books " << endl; 
+    cout << endl; 
+    cout << p2.getName() << " has " << (p2.getBookSize())/2 << " books " << endl; 
+    cout << endl; 
+
+
+    if((p1.getBookSize())/2 > (p2.getBookSize())/2){
         winner = p1.getName();
-    }else{
+        cout << "The Winner is " << winner << "!" <<endl << endl; 
+    }
+    if ((p2.getBookSize())/2 > (p1.getBookSize())/2){
         winner = p2.getName();
+        cout << "The Winner is " << winner << "!" <<endl << endl; 
+    }
+    if ((p2.getBookSize())/2 == (p1.getBookSize())/2){
+        cout << "There is tie between " << p1.getName() << " and " << p2.getName() << endl << endl; 
     }
 
-    cout << "The Winner is " << winner << "!" <<endl; 
+    
     
     
     return EXIT_SUCCESS;  
