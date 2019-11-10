@@ -7,8 +7,8 @@
 #include <iostream>
 #include <string>
 #include <vector>
-
-
+#include <ctime>
+#include <cstdlib>
 #include "card.h"
 #include "player.h"
 using namespace std;
