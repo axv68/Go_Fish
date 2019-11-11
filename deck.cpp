@@ -43,7 +43,6 @@ Deck::Deck(){
 
 void Deck::shuffle(){ 
     //shuffle cards
-
         Card temp; 
         for(int i = 0; i < 2*SIZE; i++){
             int shufflePosition1 = rand() % SIZE;
@@ -53,10 +52,6 @@ void Deck::shuffle(){
             myCards[shufflePosition2] = temp; 
         }
 
-        //cout << "Shuffled Deck\n"; 
-        // for (int i = 0; i < 52; i++){ 
-        //     cout << myCards[i] << endl;
-        // }
 }
 
 Card Deck::dealCard(){

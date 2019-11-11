@@ -123,7 +123,6 @@ void Card::setSuit(Suit s){
     mySuit = s; 
 }
 
-
 bool Card::operator == (Card const &rhs) const
 {
     return (myRank == rhs.myRank && mySuit == rhs.mySuit); 
