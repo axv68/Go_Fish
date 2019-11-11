@@ -15,7 +15,7 @@ Go Fish Program
                   then the asking player must draw a card from the deck and add it to his/her hand
             4iii.) If the opposing player does have a card of the rank that is in the asking player's hand, then the opposing player must
                    give a card of that respective rank in his/her hand to the asking player 
-    5.) A player's turn is over once he/she cannot find any more existing pairs in his/her hand. The opposing player will then begin his/her turn. 
+    5.) A player's turn is over once he/she asks the opposing player for a card the opposing player does not have, "Go Fish".
     6.) The game is finished when there are no more cards from the deck draw from
         6a.) At this time, the player with greatest number of pairs in his/her book will be the winner of the game
 
