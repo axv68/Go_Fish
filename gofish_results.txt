@@ -1,0 +1,640 @@
+Chris has : 9d 4c Ah 10h 6h 6s Js
+
+Amit has : 3h 8d Jc 9h 10d 7h 10c
+
+
+It is Chris 's turn
+
+   Chris asks if Amit has a J
+   Amit has 1 J's
+Chris NOW has : 9d 4c Ah 10h Js Jc
+
+Amit NOW has : 3h 8d 9h 10d 7h 10c
+
+
+It is Chris 's turn
+
+   Chris asks if Amit has a 10
+   Amit has 2 10's
+Chris NOW has : 9d 4c Ah 10h 10d 10c
+
+Amit NOW has : 3h 8d 9h 7h
+
+
+It is Chris 's turn
+
+   Chris asks if Amit has a 4
+
+   Amit says 'Go Fish' 
+
+   Chris draws a A
+
+Amit NOW has : 3h 8d 9h 7h
+
+Chris NOW has : 9d 4c Ah 10c Ac
+
+
+It is Amit 's turn
+
+   Amit asks if Chris has a 8
+
+   Chris says 'Go Fish' 
+
+   Amit draws a 2
+
+Chris NOW has : 9d 4c Ah 10c Ac
+
+Amit NOW has : 3h 8d 9h 7h 2d
+
+
+It is Chris 's turn
+
+   Chris asks if Amit has a 4
+
+   Amit says 'Go Fish' 
+
+   Chris draws a 3
+
+Amit NOW has : 3h 8d 9h 7h 2d
+
+Chris NOW has : 9d 4c 10c 3d
+
+
+It is Amit 's turn
+
+   Amit asks if Chris has a 3
+   Chris has 1 3's
+Amit NOW has : 3h 8d 9h 7h 2d 3d
+
+Chris NOW has : 9d 4c 10c
+
+
+It is Amit 's turn
+
+   Amit asks if Chris has a 7
+
+   Chris says 'Go Fish' 
+
+   Amit draws a 9
+
+Chris NOW has : 9d 4c 10c
+
+Amit NOW has : 8d 9h 7h 2d 9s
+
+
+It is Chris 's turn
+
+   Chris asks if Amit has a 9
+   Amit has 2 9's
+Chris NOW has : 9d 4c 10c 9h 9s
+
+Amit NOW has : 8d 7h 2d
+
+
+It is Chris 's turn
+
+   Chris asks if Amit has a 9
+
+   Amit says 'Go Fish' 
+
+   Chris draws a Q
+
+Amit NOW has : 8d 7h 2d
+
+Chris NOW has : 4c 10c 9s Qc
+
+
+It is Amit 's turn
+
+   Amit asks if Chris has a 7
+
+   Chris says 'Go Fish' 
+
+   Amit draws a 10
+
+Chris NOW has : 4c 10c 9s Qc
+
+Amit NOW has : 8d 7h 2d 10s
+
+
+It is Chris 's turn
+
+   Chris asks if Amit has a 4
+
+   Amit says 'Go Fish' 
+
+   Chris draws a 5
+
+Amit NOW has : 8d 7h 2d 10s
+
+Chris NOW has : 4c 10c 9s Qc 5c
+
+
+It is Amit 's turn
+
+   Amit asks if Chris has a 10
+   Chris has 1 10's
+Amit NOW has : 8d 7h 2d 10s 10c
+
+Chris NOW has : 4c 9s Qc 5c
+
+
+It is Amit 's turn
+
+   Amit asks if Chris has a 7
+
+   Chris says 'Go Fish' 
+
+   Amit draws a 8
+
+Chris NOW has : 4c 9s Qc 5c
+
+Amit NOW has : 8d 7h 2d 8s
+
+
+It is Chris 's turn
+
+   Chris asks if Amit has a Q
+
+   Amit says 'Go Fish' 
+
+   Chris draws a J
+
+Amit NOW has : 8d 7h 2d 8s
+
+Chris NOW has : 4c 9s Qc 5c Jd
+
+
+It is Amit 's turn
+
+   Amit asks if Chris has a 7
+
+   Chris says 'Go Fish' 
+
+   Amit draws a Q
+
+Chris NOW has : 4c 9s Qc 5c Jd
+
+Amit NOW has : 7h 2d Qd
+
+
+It is Chris 's turn
+
+   Chris asks if Amit has a J
+
+   Amit says 'Go Fish' 
+
+   Chris draws a K
+
+Amit NOW has : 7h 2d Qd
+
+Chris NOW has : 4c 9s Qc 5c Jd Kc
+
+
+It is Amit 's turn
+
+   Amit asks if Chris has a 7
+
+   Chris says 'Go Fish' 
+
+   Amit draws a 5
+
+Chris NOW has : 4c 9s Qc 5c Jd Kc
+
+Amit NOW has : 7h 2d Qd 5s
+
+
+It is Chris 's turn
+
+   Chris asks if Amit has a 9
+
+   Amit says 'Go Fish' 
+
+   Chris draws a 3
+
+Amit NOW has : 7h 2d Qd 5s
+
+Chris NOW has : 4c 9s Qc 5c Jd Kc 3s
+
+
+It is Amit 's turn
+
+   Amit asks if Chris has a 7
+
+   Chris says 'Go Fish' 
+
+   Amit draws a 4
+
+Chris NOW has : 4c 9s Qc 5c Jd Kc 3s
+
+Amit NOW has : 7h 2d Qd 5s 4h
+
+
+It is Chris 's turn
+
+   Chris asks if Amit has a 9
+
+   Amit says 'Go Fish' 
+
+   Chris draws a 7
+
+Amit NOW has : 7h 2d Qd 5s 4h
+
+Chris NOW has : 4c 9s Qc 5c Jd Kc 3s 7c
+
+
+It is Amit 's turn
+
+   Amit asks if Chris has a 7
+   Chris has 1 7's
+Amit NOW has : 7h 2d Qd 5s 4h 7c
+
+Chris NOW has : 4c 9s Qc 5c Jd Kc 3s
+
+
+It is Amit 's turn
+
+   Amit asks if Chris has a 4
+   Chris has 1 4's
+Amit NOW has : 2d Qd 5s 4h 4c
+
+Chris NOW has : 9s Qc 5c Jd Kc 3s
+
+
+It is Amit 's turn
+
+   Amit asks if Chris has a 5
+   Chris has 1 5's
+Amit NOW has : 2d Qd 5s 5c
+
+Chris NOW has : 9s Qc Jd Kc 3s
+
+
+It is Amit 's turn
+
+   Amit asks if Chris has a 2
+
+   Chris says 'Go Fish' 
+
+   Amit draws a 6
+
+Chris NOW has : 9s Qc Jd Kc 3s
+
+Amit NOW has : 2d Qd 6c
+
+
+It is Chris 's turn
+
+   Chris asks if Amit has a 9
+
+   Amit says 'Go Fish' 
+
+   Chris draws a K
+
+Amit NOW has : 2d Qd 6c
+
+Chris NOW has : 9s Qc Jd Kc 3s Kd
+
+
+It is Amit 's turn
+
+   Amit asks if Chris has a Q
+   Chris has 1 Q's
+Amit NOW has : 2d Qd 6c Qc
+
+Chris NOW has : 9s Jd Kc 3s Kd
+
+
+It is Amit 's turn
+
+   Amit asks if Chris has a 2
+
+   Chris says 'Go Fish' 
+
+   Amit draws a 4
+
+Chris NOW has : 9s Jd Kc 3s Kd
+
+Amit NOW has : 2d 6c 4s
+
+
+It is Chris 's turn
+
+   Chris asks if Amit has a 9
+
+   Amit says 'Go Fish' 
+
+   Chris draws a 8
+
+Amit NOW has : 2d 6c 4s
+
+Chris NOW has : 9s Jd 3s 8c
+
+
+It is Amit 's turn
+
+   Amit asks if Chris has a 2
+
+   Chris says 'Go Fish' 
+
+   Amit draws a K
+
+Chris NOW has : 9s Jd 3s 8c
+
+Amit NOW has : 2d 6c 4s Ks
+
+
+It is Chris 's turn
+
+   Chris asks if Amit has a 9
+
+   Amit says 'Go Fish' 
+
+   Chris draws a 6
+
+Amit NOW has : 2d 6c 4s Ks
+
+Chris NOW has : 9s Jd 3s 8c 6d
+
+
+It is Amit 's turn
+
+   Amit asks if Chris has a 2
+
+   Chris says 'Go Fish' 
+
+   Amit draws a 2
+
+Chris NOW has : 9s Jd 3s 8c 6d
+
+Amit NOW has : 2d 6c 4s Ks 2h
+
+
+It is Chris 's turn
+
+   Chris asks if Amit has a 3
+
+   Amit says 'Go Fish' 
+
+   Chris draws a 8
+
+Amit NOW has : 2d 6c 4s Ks 2h
+
+Chris NOW has : 9s Jd 3s 8c 6d 8h
+
+
+It is Amit 's turn
+
+   Amit asks if Chris has a 4
+
+   Chris says 'Go Fish' 
+
+   Amit draws a 2
+
+Chris NOW has : 9s Jd 3s 8c 6d 8h
+
+Amit NOW has : 6c 4s Ks 2c
+
+
+It is Chris 's turn
+
+   Chris asks if Amit has a J
+
+   Amit says 'Go Fish' 
+
+   Chris draws a K
+
+Amit NOW has : 6c 4s Ks 2c
+
+Chris NOW has : 9s Jd 3s 6d Kh
+
+
+It is Amit 's turn
+
+   Amit asks if Chris has a 2
+
+   Chris says 'Go Fish' 
+
+   Amit draws a 2
+
+Chris NOW has : 9s Jd 3s 6d Kh
+
+Amit NOW has : 6c 4s Ks 2c 2s
+
+
+It is Chris 's turn
+
+   Chris asks if Amit has a K
+   Amit has 1 K's
+Chris NOW has : 9s Jd 3s 6d Kh Ks
+
+Amit NOW has : 6c 4s 2c 2s
+
+
+It is Chris 's turn
+
+   Chris asks if Amit has a 6
+   Amit has 1 6's
+Chris NOW has : 9s Jd 3s 6d 6c
+
+Amit NOW has : 4s 2c 2s
+
+
+It is Chris 's turn
+
+   Chris asks if Amit has a 9
+
+   Amit says 'Go Fish' 
+
+   Chris draws a 7
+
+Amit NOW has : 4s 2c 2s
+
+Chris NOW has : 9s Jd 3s 7s
+
+
+It is Amit 's turn
+
+   Amit asks if Chris has a 4
+
+   Chris says 'Go Fish' 
+
+   Amit draws a 9
+
+Chris NOW has : 9s Jd 3s 7s
+
+Amit NOW has : 4s 9c
+
+
+It is Chris 's turn
+
+   Chris asks if Amit has a J
+
+   Amit says 'Go Fish' 
+
+   Chris draws a A
+
+Amit NOW has : 4s 9c
+
+Chris NOW has : 9s Jd 3s 7s As
+
+
+It is Amit 's turn
+
+   Amit asks if Chris has a 9
+   Chris has 1 9's
+Amit NOW has : 4s 9c 9s
+
+Chris NOW has : Jd 3s 7s As
+
+
+It is Amit 's turn
+
+   Amit asks if Chris has a 4
+
+   Chris says 'Go Fish' 
+
+   Amit draws a J
+
+Chris NOW has : Jd 3s 7s As
+
+Amit NOW has : 4s Jh
+
+
+It is Chris 's turn
+
+   Chris asks if Amit has a A
+
+   Amit says 'Go Fish' 
+
+   Chris draws a Q
+
+Amit NOW has : 4s Jh
+
+Chris NOW has : Jd 3s 7s As Qs
+
+
+It is Amit 's turn
+
+   Amit asks if Chris has a 4
+
+   Chris says 'Go Fish' 
+
+   Amit draws a 5
+
+Chris NOW has : Jd 3s 7s As Qs
+
+Amit NOW has : 4s Jh 5h
+
+
+It is Chris 's turn
+
+   Chris asks if Amit has a 3
+
+   Amit says 'Go Fish' 
+
+   Chris draws a 3
+
+Amit NOW has : 4s Jh 5h
+
+Chris NOW has : Jd 3s 7s As Qs 3c
+
+
+It is Amit 's turn
+
+   Amit asks if Chris has a J
+   Chris has 1 J's
+Amit NOW has : 4s Jh 5h Jd
+
+Chris NOW has : 3s 7s As Qs 3c
+
+
+It is Amit 's turn
+
+   Amit asks if Chris has a 5
+
+   Chris says 'Go Fish' 
+
+   Amit draws a A
+
+Chris NOW has : 3s 7s As Qs 3c
+
+Amit NOW has : 4s 5h Ad
+
+
+It is Chris 's turn
+
+   Chris asks if Amit has a A
+   Amit has 1 A's
+Chris NOW has : 7s As Qs Ad
+
+Amit NOW has : 4s 5h
+
+
+It is Chris 's turn
+
+   Chris asks if Amit has a 7
+
+   Amit says 'Go Fish' 
+
+   Chris draws a 5
+
+Amit NOW has : 4s 5h
+
+Chris NOW has : 7s Qs 5d
+
+
+It is Amit 's turn
+
+   Amit asks if Chris has a 5
+   Chris has 1 5's
+Amit NOW has : 4s 5h 5d
+
+Chris NOW has : 7s Qs
+
+
+It is Amit 's turn
+
+   Amit asks if Chris has a 4
+
+   Chris says 'Go Fish' 
+
+   Amit draws a 4
+
+Chris NOW has : 7s Qs
+
+Amit NOW has : 4s 4d
+
+
+It is Chris 's turn
+
+   Chris asks if Amit has a Q
+
+   Amit says 'Go Fish' 
+
+   Chris draws a 7
+
+Amit NOW has : 4s 4d
+
+Chris NOW has : 7s Qs 7d
+
+    Amit is out of cards and draws a Qh
+
+It is Chris 's turn
+
+   Chris asks if Amit has a Q
+   Amit has 1 Q's
+Chris NOW has : 7s Qs 7d Qh
+
+Amit NOW has :  
+
+The deck is empty! Time to tally up results ....
+
+________________________________
+
+Chris has 11 books 
+
+Amit has 13 books 
+
+The Winner is Amit!
+

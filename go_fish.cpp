@@ -16,7 +16,7 @@ void dealHand(Deck &d, Player &p, int numCards);
 
 int main()
 {
-    ofstream thisFile ("go_fish.txt"); //Open the text file
+    ofstream thisFile ("gofish_results.txt"); //Open the text file
 
     int numCards = 7;
     int matchCounter = 0;
