@@ -61,6 +61,10 @@ void Player::bookCards(Card c1, Card c2)
 
 Card Player::chooseCardFromHand() const
 {
+    Card  dummyCard;
+    if(myHand.size() == 0){
+        return dummyCard;
+    }
     int randomCardNum = rand() % myHand.size();
     return (myHand[randomCardNum]);
 }

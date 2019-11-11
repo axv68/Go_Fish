@@ -56,13 +56,13 @@ int main()
                 askingPlayer = stillPlayer; 
                 stillPlayer = temp;
             }
-            else{
-                break; // if the players hand is 0 AND the deck is 0, you should break
-            }
         }
         cout << endl << "It is " << askingPlayer->getName() << " 's turn" << endl;
             thisFile << endl << "It is " << askingPlayer->getName() << " 's turn" << endl;
         Card p = askingPlayer->chooseCardFromHand();
+        if(p == dummyCard){
+            break;
+        }
         cout << endl << "   " << askingPlayer->getName() << " asks if " << stillPlayer->getName() << " has a " << p.rankString(p.getRank()) << endl;
             thisFile << endl << "   " << askingPlayer->getName() << " asks if " << stillPlayer->getName() << " has a " << p.rankString(p.getRank()) << endl;
 
